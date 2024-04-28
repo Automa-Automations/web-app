@@ -1,5 +1,23 @@
+import { Flex, Box, Text, Button, Icon, Image } from "@chakra-ui/react"
+
+import Logo from "../assets/logo.svg"
+
 export default function Navbar() {
   return (
-    <div>navbar</div>
+    <Flex
+      align="center"
+      justify="space-evenly"
+      p="30px 21px"
+    >
+      <Image 
+        src={Logo}
+        w="25px"
+      />
+      <Text
+        fontWeight="bold"
+      >
+        Automa Automations
+      </Text>
+    </Flex>
   )
 }

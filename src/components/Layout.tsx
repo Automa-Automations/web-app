@@ -1,6 +1,13 @@
+import { Flex } from "@chakra-ui/react"
+import Navbar from "./Navbar"
+
 export default function Layout() {
   return (
-    <div>Layout</div>
+    <Flex
+      bg="bg"
+    >
+      <Navbar />
+    </Flex>
   )
 }
 
