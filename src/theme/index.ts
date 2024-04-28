@@ -4,6 +4,9 @@ import { extendTheme } from '@chakra-ui/react'
 // Global style overrides
 import styles from './styles'
 
+// Theme config - light and dark mode
+import themeConfig from './themeConfig'
+
 // Foundational style overrides
 import borders from './foundations/borders'
 
@@ -11,6 +14,7 @@ import borders from './foundations/borders'
 import Button from './components/button'
 
 const overrides = {
+  config: themeConfig,
   ...styles,
   ...borders,
   // Other foundational style overrides go here
