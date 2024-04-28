@@ -11,8 +11,8 @@ import borders from './foundations/borders'
 import Button from './components/button'
 
 const overrides = {
-  styles,
-  borders,
+  ...styles,
+  ...borders,
   // Other foundational style overrides go here
   components: {
     Button,

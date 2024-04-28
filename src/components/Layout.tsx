@@ -4,7 +4,7 @@ import Navbar from "./Navbar"
 export default function Layout() {
   return (
     <Flex
-      bg="bg"
+      backgroundColor={"bg.dark"}
     >
       <Navbar />
     </Flex>
