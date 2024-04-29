@@ -10,11 +10,11 @@ export default function IconMenu(props: IconMenuProps) {
         icon={props.icon}
         variant='outline'
       />
-      <MenuList backgroundColor="bg.dark">
+      <MenuList backdropFilter="blur(50px)" bgColor="transparent">
         {
           props.items.map((item: LinkObject, index: number) => {
             return (
-              <MenuItem backgroundColor="bg.dark" as={Link} href={item.link} textStyle="bodysm" textDecoration="none" key={index}>
+              <MenuItem bgColor="transparent" as={Link} href={item.link} textStyle="bodysm" textDecoration="none" key={index}>
                 {item.name}
               </MenuItem>
             )
