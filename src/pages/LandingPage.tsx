@@ -13,7 +13,7 @@ export default function LandingPage() {
           </Box>
           <Text textStyle={{base: "bodysm", lg: "bodyxl"}}>Automa Automations will save you time, by automating the content creation and content scheduling.</Text>
         </Flex>
-        <Button>Get Started</Button>
+        <Button size="lg">Get Started</Button>
       </Flex>
     </Flex>
   )

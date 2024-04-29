@@ -1,40 +1,52 @@
-import { defineStyleConfig } from '@chakra-ui/react'
+import { defineStyleConfig } from "@chakra-ui/react"
+import textStyles from "../styles/textStyles"
+import colors from "../styles/colors"
 
 const Button = defineStyleConfig({
   // The styles all button have in common
   baseStyle: {
+    ...textStyles.headlinesm,
     fontWeight: 'bold',
-    borderRadius: '8px', // <-- border radius is same for all variants and sizes
+    color: colors.text.dark,
   },
   // Two sizes: sm and md
   sizes: {
-    sm: {
-      fontSize: 'sm',
-      px: 4, // <-- px is short for paddingLeft and paddingRight
-      py: 3, // <-- py is short for paddingTop and paddingBottom
+    lg: {
+      px: "25px", 
+      py: "18px", 
+      borderRadius: "10px"
     },
     md: {
-      fontSize: 'md',
-      px: 6, // <-- these values are tokens from the design system
-      py: 4, // <-- these values are tokens from the design system
+      px: "20px", 
+      py: "14px", 
+      borderRadius: "8px"
+    },
+    sm: {
+      px: "15px", 
+      py: "11.5px", 
+      borderRadius: "5px"
     },
   },
   // Two variants: outline and solid
   variants: {
-    outline: {
-      border: '2px solid',
-      borderColor: 'purple.500',
-      color: 'purple.500',
+    primary: {
+      backgroundColor: colors.primary.default,
     },
-    solid: {
-      bg: 'purple.500',
-      color: 'white',
+    secondary: {
+      backgroundColor: colors.secondary.dark
+    },
+    tertiary: {
+      backgroundColor: colors.tertiary.dark
+    },
+    outline: {
+      backgroundColor: 'transparent',
+      border: `2px solid ${colors.text.dark}`,
     },
   },
   // The default size and variant values
   defaultProps: {
     size: 'md',
-    variant: 'outline',
+    variant: 'primary',
   },
 })
 
