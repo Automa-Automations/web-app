@@ -14,7 +14,7 @@ export default function IconMenu(props: IconMenuProps) {
         {
           props.items.map((item: LinkObject, index: number) => {
             return (
-              <MenuItem backgroundColor="bg.dark" as={Link} href={item.link} key={index}>
+              <MenuItem backgroundColor="bg.dark" as={Link} href={item.link} textStyle="bodysm" textDecoration="none" key={index}>
                 {item.name}
               </MenuItem>
             )

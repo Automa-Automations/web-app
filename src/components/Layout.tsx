@@ -3,8 +3,7 @@ import Navbar from "./Navbar"
 import { useColorModeValue } from "@chakra-ui/react"
 import { Outlet } from "react-router-dom"
 // Get the current route the user is on, change everytime the user navigates to a differnt route 
-import { useEffect, useLocation } from "react-router-dom"
-import { useState } from "react"
+import { useLocation } from "react-router-dom"
 
 export default function Layout() {
   const location = useLocation()

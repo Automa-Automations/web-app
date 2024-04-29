@@ -21,7 +21,7 @@ export default function Navbar() {
     <Flex
       align="center"
       justify="space-between"
-      p="0px 30px"
+      p={{base: "0px 15px", md: "0px 30px"}}
       height="10vh"
     >
       <Image
@@ -29,7 +29,7 @@ export default function Navbar() {
         w="25px"
       />
       <Text
-        fontWeight="bold"
+        textStyle="headlinesm"
       >
         Automa Automations
       </Text>
