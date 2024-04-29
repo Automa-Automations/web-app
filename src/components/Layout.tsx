@@ -1,19 +1,26 @@
 import { Flex, Button } from "@chakra-ui/react"
 import Navbar from "./Navbar"
-import { useColorModeValue, useColorMode } from "@chakra-ui/react"
+import { useColorModeValue } from "@chakra-ui/react"
 import { Outlet } from "react-router-dom"
-// Here's the signature
-//
+// Get the current route the user is on, change everytime the user navigates to a differnt route 
+import { useEffect, useLocation } from "react-router-dom"
+import { useState } from "react"
 
 export default function Layout() {
-
+  const location = useLocation()
+  // variable to check if the user is on the "/" route
+  
   const bg = useColorModeValue("bg.light", "bg.dark")
+
   return (
     <Flex
-      backgroundColor={bg}
+      background={{
+        base: location.pathname == "/" ? "radialGradient.sm" : bg, 
+        md: location.pathname == "/" ? "radialGradient.lg" : bg
+      }}
       direction="column"
-      align="center"
-      justify="center"
+      w="full"
+      minHeight="100vh"
     >
       <Navbar />
       <Outlet />

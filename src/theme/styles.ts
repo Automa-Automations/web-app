@@ -1,4 +1,8 @@
 //Global styles overrides
+//
+const radialColor1 = "#330643"
+const radialColor2 = "#000215"
+
 const styles = {
   colors: {
     bg: {
@@ -24,11 +28,11 @@ const styles = {
       dark: "#33ff00",
       light: "#0000ff",
     },
-    radialColor1: "#330643",
-    radialColor2: "#000215",
+    radialColor1: radialColor1,
+    radialColor2: radialColor2,
     radialGradient: {
-      sm: (radialColor1, radialColor2) => `radial-gradient(50% 50% at center, ${color1}, ${color2})`,
-      lg: (radialColor1, radialColor2) => `radial-gradient(80% 80% at center, ${color1}, ${color2})`,
+      sm: `radial-gradient(50% 50% at center, ${radialColor1}, ${radialColor2})`,
+      lg: `radial-gradient(80% 80% at center, ${radialColor1}, ${radialColor2})`,
     }
   },
 }
