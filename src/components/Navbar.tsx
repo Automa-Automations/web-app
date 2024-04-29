@@ -21,8 +21,8 @@ export default function Navbar() {
     <Flex
       align="center"
       justify="space-between"
-      p="21px 30px"
-      minHeight="10vh"
+      p="0px 30px"
+      height="10vh"
     >
       <Image
         src={Logo}
