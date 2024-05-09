@@ -1,0 +1,51 @@
+/* All the text style classes for Automa Web Application */
+
+/* 1em: 10px */
+
+/* HEADINGS: */
+.headline3xl {
+  font-weight: var(--bold);
+  font-size: 6em;
+  line-height: 100%;
+}
+
+.headline2xl {
+  font-weight: var(--bold);
+  font-size: 4.8em;
+  line-height: 5.6em;
+}
+
+.headlinexl {
+  font-weight: var(--bold);
+  font-size: 3.6em;
+  line-height: 4.4em;
+}
+
+.headlinelg {
+  font-weight: var(--semibold);
+  font-size: 3em;
+  line-height: 4em;
+}
+
+.headlinemd {
+  font-weight: var(--semibold);
+  font-size: 2.4em;
+  line-height: 3.6em;
+}
+
+.headlinesm {
+  font-weight: var(--semibold);
+  font-size: 1.6em;
+  line-height: 100%;
+}
+
+/* BODY: */
+
+/* META (OTHER): */
+
+.link {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
