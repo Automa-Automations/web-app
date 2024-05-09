@@ -1,0 +1,82 @@
+/* DEFAULT CARD: */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: var(--rounded-2xl);
+}
+
+/*-------------------------------------*/
+/* DEFAULT MOBILE CARD (SM):  */
+
+.card.card-sm {
+  gap: 1.5em;
+  padding: 1.5em 2em;
+}
+
+/*-------------------------------------*/
+/* DEFAULT DESKTOP CARD (LG):  */
+
+.card.card-lg {
+  gap: 3.2em;
+  padding: 3em 4em;
+  background-color: var(--overlay50);
+  backdrop-filter: var(--blur50);
+}
+
+/*----------------------------------------------------------------------------*/
+/* OVERLAY CARD: */
+
+.overlay-card {
+  background-color: var(--overlay100);
+  border-radius: var(--rounded-xl);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*-------------------------------------*/
+/* OVERLAY MOBILE CARD (SM):  */
+
+.overlay-card.overlay-card-sm {
+  padding: 1em 1.5em;  
+  gap: 1em;
+}
+
+/*-------------------------------------*/
+/* OVERLAY DEFAULT CARD (MD):  */
+
+.overlay-card.overlay-card-md {
+  padding: 2em 3em;  
+  gap: 1em;
+}
+
+/*-------------------------------------*/
+/* OVERLAY DESKTOP CARD (LG):  */
+
+.overlay-card.overlay-card-lg {
+  padding: 2em 3em;  
+  gap: 1.6em;
+}
+
+/*-------------------------------------*/
+/* OVERLAY CHIP CARD:  */
+
+.overlay-card.overlay-chip-card {{
+  flex-direction: row;
+  padding: 2em 3em;  
+  gap: 1em;
+}
+
+/*----------------------------------------------------------------------------*/
+/* DASHBOARD CARD: */
+
+.dashboard-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2.4em;
+  border-radius: var(--rounded-lg);
+}

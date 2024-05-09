@@ -112,6 +112,11 @@
   --thin: 100;
 
   /*----------------------------------------------------------------------------*/
+  /* EFFECTS: */
+  /*-------------------------------------*/
+  /* BACKDROP-FITLER:  */
+  --blur50: blur(50px);
+
 }
 
 /* GLOBAL STYLES */
@@ -123,6 +128,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text);
 }
+
 button {
   border-radius: var(--rounded-4xl);
   border: none;
