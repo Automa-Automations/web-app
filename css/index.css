@@ -5,29 +5,62 @@
 }
 
 :root {
-  /* Color Variables:  */
+  /* COLORS:  */
+  /*-------------------------------------*/
+  /* Background & Text:  */
+
   --bg-color: #121212;
   --bg-light: #fff;
   --text: #fff;
   --text-dark: #121212;
+
+  /*-------------------------------------*/
+  /* Primarary, secondary and tertiary:  */
+
   --primary: #5353F5;
   --secondary: #000051;
   --tertiary: #373737;
-  --link: #1877f2;
-  --orange: #ff8a00;
-  --bright-blue: #1877f2;
+
+  /*-------------------------------------*/
+  /* Overlays:  */
+
   --overlay50: rgba(255, 255, 255, .05);
   --overlay100: rgba(255, 255, 255, .1);
   --overlay100-orange: #5f2e18;
   --overlay100-attention: #12550f;
   --overlay100-no-transparency: #303253;
-  --text-attention: #33ff00;
+
+  /*-------------------------------------*/
+  /* Box Colors:  */
+
   --box-error: #815656;
   --box-disabled: #404151;
+
+  /*-------------------------------------*/
+  /* Labels:  */
+
   --default-label: #6d6d6d;
 
+  /*-------------------------------------*/
+  /* Attention:  */
+
+  --text-attention: #33ff00;
+
+  /*-------------------------------------*/
+  /* Other colors */
+
+  --link: #1877f2;
+  --orange: #ff8a00;
+  --bright-blue: #1877f2;
+
+  /*-------------------------------------*/
+  /* Gradients */
+
+  --attention-text-gradient: linear-gradient(90deg, #adff76, #8aff3c, #66ff00):
+
   /*----------------------------------------------------------------------------*/
-  /* Borders */
+  /*----------------------------------------------------------------------------*/
+  /* BORDERS: */
 
   /*----------------------------------------------------------------------------*/
   /* Border Radius */

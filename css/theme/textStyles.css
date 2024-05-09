@@ -1,7 +1,5 @@
 /* All the text style classes for Automa Web Application */
 
-/* 1em: 10px */
-
 /* HEADINGS: */
 .headline3xl {
   font-weight: var(--bold);
@@ -40,7 +38,6 @@
 }
 
 /*----------------------------------------------------------------------------*/
-
 /* BODY: */
 
 .bodyxl {
@@ -64,7 +61,6 @@
 }
 
 /*----------------------------------------------------------------------------*/
-
 /* META (OTHER): */
 
 .labelmd {
