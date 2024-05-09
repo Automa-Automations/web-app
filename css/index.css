@@ -7,29 +7,79 @@
 :root {
   /* Color Variables:  */
   --bg-color: #121212;
+  --bg-light: #fff;
   --text: #fff;
+  --text-dark: #121212;
   --primary: #5353F5;
   --secondary: #000051;
   --tertiary: #373737;
+  --link: #1877f2;
+  --orange: #ff8a00;
+  --bright-blue: #1877f2;
+  --overlay50: rgba(255, 255, 255, .05);
+  --overlay100: rgba(255, 255, 255, .1);
+  --overlay100-orange: #5f2e18;
+  --overlay100-attention: #12550f;
+  --overlay100-no-transparency: #303253;
   --text-attention: #33ff00;
   --box-error: #815656;
   --box-disabled: #404151;
   --default-label: #6d6d6d;
-  --bright-blue: #1877f2;
-  --orange: #ff8a00;
-  --text-dark: #121212;
-  --bg-light: #fff;
-  --overlay50: rgba(255, 255, 255, .05);
-  --overlay100: rgba(255, 255, 255, .1);
-  --link: #1877f2;
-  --default-border-large: 100;
-  --border-radius-medium: 8;
-  --border-radius-small: 5;
-  --overlay100-orange: #5f2e18;
-  --overlay100-attention: #12550f;
-  --overlay100-no-transparency: #303253;
+
+  /*----------------------------------------------------------------------------*/
+  /* Borders */
+
+  /*----------------------------------------------------------------------------*/
+  /* Border Radius */
+
+  --rounded-sm {
+    border-radius: 2.5px;
+  }
+
+  --rounded-md {
+    border-radius: 5px;
+  }
+
+  --rounded-lg {
+    border-radius: 10px;
+  }
+
+  --rounded-xl {
+    border-radius: 12px;
+  }
+
+  --rounded-2xl {
+    border-radius: 18px;
+  }
+
+  --rounded-3xl {
+    border-radius: 25px;
+  }
+
+  --rounded-4xl {
+    border-radius: 32px;
+  }
+
+  --rounded-4xl {
+    border-radius: 40px;
+  }
+
+  --rounded-full {
+    border-radius: 50%;
+  }
+
+  /*----------------------------------------------------------------------------*/
+  /* Font Weight */
+
   --bold: bold;
   --semibold: 600;
+  --medium: 500;
+  --regular: 400;
+  --light: 300;
+  --extra-light: 200;
+  --thin: 100;
+
+  /*----------------------------------------------------------------------------*/
 }
 
 body {
