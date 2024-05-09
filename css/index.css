@@ -134,6 +134,10 @@ button {
   border: none;
 }
 
+img {
+  object-fit: cover;
+}
+
 h1 {
   font-size: 3em;
 }

@@ -8,8 +8,7 @@
 }
 
 .headline2xl {
-  font-weight: var(--bold);
-  font-size: 4.8em;
+  font-weight: var(--bold); font-size: 4.8em;
   line-height: 5.6em;
 }
 
