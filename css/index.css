@@ -59,7 +59,14 @@
   --attention-text-gradient: linear-gradient(90deg, #adff76, #8aff3c, #66ff00):
 
   /*----------------------------------------------------------------------------*/
-  /* BORDERS: */
+  /* BORDER SIZES: */
+
+  --bordersm: 1px solid;
+  --bordermd: 2px solid;
+  --borderlg: 3px solid;
+  --borderxl: 5px solid;
+  --border2xl: 7px solid;
+  --border3xl: 10px solid;
 
   /*----------------------------------------------------------------------------*/
   /* BORDER RADIUS: */

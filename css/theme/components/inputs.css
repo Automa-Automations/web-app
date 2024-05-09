@@ -1,0 +1,32 @@
+/* TEXT INPUT: */
+
+.text-input {
+  width: 100%;
+  background-color: var(--)
+}
+
+/*-------------------------------------*/
+/* DEFAULT DESKTOP CARD (LG):  */
+
+.card.card-lg {
+  gap: 3.2em;
+  padding: 3em 4em;
+  background-color: var(--overlay50);
+  backdrop-filter: var(--blur50);
+}
+
+/*-------------------------------------*/
+/* DEFAULT MOBILE CARD (SM):  */
+
+.card.card-sm {
+  gap: 1.5em;
+  padding: 1.5em 2em;
+}
+
+/*----------------------------------------------------------------------------*/
+/* OVERLAY CARD: */
+
+
+.text-input {
+  width: 100%;
+}
