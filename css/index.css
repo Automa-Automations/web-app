@@ -123,8 +123,9 @@ body {
   background-color: var(--bg-color);
   color: var(--text);
 }
-
 button {
+  border-radius: var(--rounded-4xl);
+  border: none;
 }
 
 h1 {
