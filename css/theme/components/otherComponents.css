@@ -1,0 +1,15 @@
+/* BADGE: */
+
+.badge {
+  border-radius: var(--rounded-md);
+  text-transform: uppercase;
+  padding: 7.5px 10px; 
+  border: var(--bordersm);
+}
+
+/*-------------------------------------*/
+/* DEFAULT DESKTOP CARD (LG):  */
+
+/*----------------------------------------------------------------------------*/
+/* OVERLAY CARD: */
+

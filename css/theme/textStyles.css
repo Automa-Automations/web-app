@@ -78,8 +78,11 @@
 }
 
 .link {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1.6em;
+  line-height: 2.2em;
 }
 
-
+.badge-text {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
