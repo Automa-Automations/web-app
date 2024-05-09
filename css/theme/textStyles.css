@@ -39,9 +39,48 @@
   line-height: 100%;
 }
 
+/*----------------------------------------------------------------------------*/
+
 /* BODY: */
 
+.bodyxl {
+  font-size: 2em;
+  line-height: 150%;
+}
+
+.bodylg {
+  font-size: 1.8em;
+  line-height: 2.8em;
+}
+
+.bodymd {
+  font-size: 1.6em;
+  line-height: 2.4em;
+}
+
+.bodysm {
+  font-size: 1.4em;
+  line-height: 2.1em;
+}
+
+/*----------------------------------------------------------------------------*/
+
 /* META (OTHER): */
+
+.labelmd {
+  font-size: 1.4em;
+  line-height: 100%;
+}
+
+.labelsm {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.captionmd {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
 
 .link {
   font-size: 16px;

@@ -28,11 +28,13 @@
   --overlay100-orange: #5f2e18;
   --overlay100-attention: #12550f;
   --overlay100-no-transparency: #303253;
+  --bold: bold;
+  --semibold: 600;
 }
 
 body {
   font-size: 10px;
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   width: 100%;
   height: 100vh;
   background-color: var(--bg-color);
