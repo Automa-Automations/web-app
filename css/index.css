@@ -173,25 +173,3 @@ main {
   height: 90vh;
   text-align: center;
 }
-
-@media (min-width: 512px) {
-  nav {
-    padding: 0px 35px;
-  }
-  #menu-btn {
-    display: none;
-  }
-  #nav-list {
-    display: flex;
-    position: static;
-    flex-direction: row; 
-    padding: 0;
-    border: none;
-  }
-}
-
-@media (min-width: 800px) {
-  nav header img {
-    display: block;
-  }
-}

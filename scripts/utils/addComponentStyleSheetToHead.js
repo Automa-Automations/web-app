@@ -5,7 +5,7 @@ const addComponentStyleSheetToHead = (name) => {
 
   const link = document.createElement("link")
   link.setAttribute("rel", "stylesheet")
-  link.setAttribute("href", `../../css/components/navbar.css`)
+  link.setAttribute("href", `../../css/components/${name}.css`)
 
   head.appendChild(link);
 }

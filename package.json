@@ -11,5 +11,8 @@
   "devDependencies": {
     "vite": "^5.2.0"
   },
-  "type": "module"
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2"
+  }
 }
