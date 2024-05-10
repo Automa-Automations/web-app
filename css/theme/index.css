@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0; 
   padding: 0;
 }
 
@@ -61,7 +61,6 @@
   /* Attention:  */
 
   --text-attention: #33ff00;
-
   /*-------------------------------------*/
   /* Other colors */
 
@@ -72,10 +71,7 @@
   /*-------------------------------------*/
   /* Gradients */
 
-  --attention-text-gradient: linear-gradient(90deg, #adff76, #8aff3c, #66ff00):
-
-  /*----------------------------------------------------------------------------*/
-  /* BORDER SIZES: */
+  --attention-text-gradient: linear-gradient(90deg, #adff76, #8aff3c, #66ff00);
 
   --bordersm: 1px solid;
   --bordermd: 2px solid;
@@ -87,41 +83,15 @@
   /*----------------------------------------------------------------------------*/
   /* BORDER RADIUS: */
 
-  --rounded-sm {
-    border-radius: 2.5px;
-  }
-
-  --rounded-md {
-    border-radius: 5px;
-  }
-
-  --rounded-lg {
-    border-radius: 10px;
-  }
-
-  --rounded-xl {
-    border-radius: 12px;
-  }
-
-  --rounded-2xl {
-    border-radius: 18px;
-  }
-
-  --rounded-3xl {
-    border-radius: 25px;
-  }
-
-  --rounded-4xl {
-    border-radius: 32px;
-  }
-
-  --rounded-4xl {
-    border-radius: 40px;
-  }
-
-  --rounded-full {
-    border-radius: 50%;
-  }
+  --rounded-sm: 2.5px;
+  --rounded-md: 5px;
+  --rounded-lg: 10px;
+  --rounded-xl: 12px;
+  --rounded-2xl: 18px;
+  --rounded-3xl: 25px;
+  --rounded-4xl: 32px;
+  --rounded-4xl: 40px;
+  --rounded-full: 50%;
 
   /*----------------------------------------------------------------------------*/
   /* FONT WEIGHT: */

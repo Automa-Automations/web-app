@@ -40,7 +40,7 @@ nav header img {
   top: 10vh;
   right: 5vh;
   border-radius: var(--rounded-lg);
-  border: var(--bordersm);
+  border: var(--bordermd);
   border-color: var(--text);
   padding: 16px 30px;
   backdrop-filter: blur(50px);
