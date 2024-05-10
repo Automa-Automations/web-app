@@ -1,5 +1,5 @@
 import { navbar } from "../../components";
 import { addHeadContent } from "../utils";
 
-addHeadContent();
+addHeadContent({textStyles: true});
 navbar("#navbar")

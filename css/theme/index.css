@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* COLORS:  */
+  /*-------------------------------------*/
+  /* Background & Text:  */
+
+  --bg-color: #121212;
+  --bg-light: #fff;
+  --text: #fff;
+  --text-dark: #121212;
+
+  /*-------------------------------------*/
+  /* Primarary, secondary and tertiary:  */
+
+  --primary: #5353F5;
+  --secondary: #000051;
+  --tertiary: #373737;
+
+  /*-------------------------------------*/
+  /* Overlays:  */
+
+  --overlay50: rgba(255, 255, 255, .05);
+  --overlay100: rgba(255, 255, 255, .1);
+  --overlay100-orange: #5f2e18;
+  --overlay100-attention: #12550f;
+  --overlay100-no-transparency: #303253;
+
+  /*-------------------------------------*/
+  /* Containers:  */
+
+  --container-primary-dark: #1C1C1E;
+  --box-disabled: #404151;
+
+  /*-------------------------------------*/
+  /* Box Colors:  */
+
+  --box-error: #815656;
+  --box-disabled: #404151;
+
+  /*-------------------------------------*/
+  /* Labels:  */
+
+  --label-default: #6d6d6d;
+  --label-primary-light: #000;
+  --label-primary-dark: #fff;
+  --label-tertiary-light: rgba(60, 60, 67, 0.3);
+  --label-tertiary-dark: rgba(235, 235, 245, 0.3);
+
+  /*-------------------------------------*/
+  /* Separators:  */
+
+  --separator-non-opaque-light: rgba(60, 60, 67, 0.36);
+  --separator-non-opaque-dark: rgba(84, 84, 88, 0.65);
+
+  /*-------------------------------------*/
+  /* Attention:  */
+
+  --text-attention: #33ff00;
+
+  /*-------------------------------------*/
+  /* Other colors */
+
+  --link: #1877f2;
+  --orange: #ff8a00;
+  --bright-blue: #1877f2;
+
+  /*-------------------------------------*/
+  /* Gradients */
+
+  --attention-text-gradient: linear-gradient(90deg, #adff76, #8aff3c, #66ff00):
+
+  /*----------------------------------------------------------------------------*/
+  /* BORDER SIZES: */
+
+  --bordersm: 1px solid;
+  --bordermd: 2px solid;
+  --borderlg: 3px solid;
+  --borderxl: 5px solid;
+  --border2xl: 7px solid;
+  --border3xl: 10px solid;
+
+  /*----------------------------------------------------------------------------*/
+  /* BORDER RADIUS: */
+
+  --rounded-sm {
+    border-radius: 2.5px;
+  }
+
+  --rounded-md {
+    border-radius: 5px;
+  }
+
+  --rounded-lg {
+    border-radius: 10px;
+  }
+
+  --rounded-xl {
+    border-radius: 12px;
+  }
+
+  --rounded-2xl {
+    border-radius: 18px;
+  }
+
+  --rounded-3xl {
+    border-radius: 25px;
+  }
+
+  --rounded-4xl {
+    border-radius: 32px;
+  }
+
+  --rounded-4xl {
+    border-radius: 40px;
+  }
+
+  --rounded-full {
+    border-radius: 50%;
+  }
+
+  /*----------------------------------------------------------------------------*/
+  /* FONT WEIGHT: */
+
+  --bold: bold;
+  --semibold: 600;
+  --medium: 500;
+  --regular: 400;
+  --light: 300;
+  --extra-light: 200;
+  --thin: 100;
+
+  /*----------------------------------------------------------------------------*/
+  /* EFFECTS: */
+  /*-------------------------------------*/
+  /* BACKDROP-FITLER:  */
+  --blur50: blur(50px);
+
+}
+
+/* GLOBAL STYLES */
+body {
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text);
+}
+
+button {
+  border-radius: var(--rounded-4xl);
+  border: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+}
