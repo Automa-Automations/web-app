@@ -26,7 +26,7 @@ nav header img {
   line-height: 100%;
   background-color: transparent;
   border: none;
-  width: 2.5em;
+  width: 2.4em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,9 +39,10 @@ nav header img {
   flex-direction: column;
   top: 10vh;
   right: 5vh;
-  border-radius: 7px;
-  border: 2px solid white;
-  padding: 15px 25px;
+  border-radius: var(--rounded-lg);
+  border: var(--bordersm);
+  border-color: var(--text);
+  padding: 16px 30px;
   backdrop-filter: blur(50px);
   gap: 10px;
   list-style: none;
