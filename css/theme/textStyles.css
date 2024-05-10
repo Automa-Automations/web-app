@@ -77,6 +77,11 @@
   line-height: 1.5em;
 }
 
+.nav-link {
+  font-size: 1.6em;
+  line-height: 135%;
+}
+
 .link {
   font-size: 1.6em;
   line-height: 2.2em;

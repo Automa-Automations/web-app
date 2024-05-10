@@ -21,8 +21,7 @@ nav header img {
 }
 
 #menu-btn {
-  vertical-align: middle;
-  cursor: pointer;
+  vertical-align: middle; cursor: pointer;
   line-height: 100%;
   background-color: transparent;
   border: none;
@@ -34,6 +33,7 @@ nav header img {
 }
 
 #nav-list {
+  gap: 10px;
   display: none;
   position: absolute;
   flex-direction: column;
@@ -44,19 +44,16 @@ nav header img {
   border-color: var(--text);
   padding: 16px 30px;
   backdrop-filter: blur(50px);
-  gap: 10px;
   list-style: none;
   transition: .5s ease-in-out;
 }
 
 #nav-list a {
-  font-size: 1.5em;
-  font-weight: 600;
   transition: .5s ease-in-out;
   position: relative;
 }
 
-#nav-list a::after {
+.nav-link::after {
   content: "";
   position: absolute;
   background-color: var(--text);
@@ -109,11 +106,13 @@ nav header img {
   nav {
     padding: 0px 35px;
   }
+
   #menu-btn {
     display: none;
   }
   #nav-list {
     display: flex;
+    gap: 25px;
     position: static;
     flex-direction: row; 
     padding: 0;

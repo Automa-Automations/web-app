@@ -22,9 +22,9 @@ const navbar = (navbarSelector) => {
       ${menuButtonHTML}
     </svg>
     <div id="nav-list">
-      <a target="_blank" href="">About</a>
-      <a target="_blank" href="">Contact</a>
-      <a target="_blank" href="">Pricing</a>
+      <a class="nav-link" target="_blank" href="">About</a>
+      <a class="nav-link" target="_blank" href="">Contact</a>
+      <a class="nav-link" target="_blank" href="">Pricing</a>
     </div>
   `
   navbarElement.innerHTML = navbarInnerHTML
