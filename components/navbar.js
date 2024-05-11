@@ -1,4 +1,5 @@
 import { addComponentStyleSheetToHead } from "../scripts/utils"
+import { isMobile } from "../scripts/utils";
 
 // Param is the navbar element to put in the children
 const navbar = (navbarSelector) => {
@@ -41,10 +42,6 @@ const navbar = (navbarSelector) => {
     isMenuActive = !isMenuActive; 
     toggleMenu(isMenuActive);
     menuButton.style.rotate = `${rotation}deg`;
-  }
-
-  const isMobile = () => {
-    return window.innerWidth <= 512;
   }
 
   const toggleMenu = (isMenuActive) => {

@@ -32,13 +32,10 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-.hero-text p {
-}
-
-.overlay-bottom-text {
+#hero-bottom-text {
   position: absolute; 
-  bottom: 30px;
   width: 90%;
+  bottom: 30px;
 }
 
 @media (min-width: 320px) {
