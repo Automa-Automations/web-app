@@ -6,7 +6,8 @@ main {
   justify-content: center;
   height: 90vh;
   text-align: center;
-  padding: 1em;
+  padding: 10px;
+  position: relative;
 }
 
 .hero, .inner-hero, .hero-text {
@@ -16,16 +17,32 @@ main {
   width: 100%;
 }
 
+.inner-hero {
+  gap: 23px;
+  padding-bottom: 96px;
+}
+
 .hero-text {
   gap: 5px;
 }
 
-.hero h1 {
+.hero-text h1 {
   background: var(--attention-text-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.hero p:nth-of-type(1) {
+.hero-text p {
+}
+
+.overlay-bottom-text {
+  position: absolute; 
+  bottom: 30px;
   width: 90%;
+}
+
+@media (min-width: 320px) {
+  .hero-text p {
+    width: 80%;
+  }
 }
