@@ -38,8 +38,36 @@ main {
   bottom: 30px;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 450px) {
   .hero-text p {
     width: 80%;
+  }
+
+  #hero-bottom-text {
+    width: 70%;
+  }
+
+/* const mobileWidth = 450; */
+/* const tabletWidth  = 750; */
+/* const desktopWidth = 1000; */
+}
+
+@media (min-width: 750px) {
+  .hero-text p {
+    width: 70%;
+  }
+
+  #hero-bottom-text {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero-text p {
+    width: 60%;
+  }
+
+  #hero-bottom-text {
+    width: 50%;
   }
 }
