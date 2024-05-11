@@ -4,36 +4,36 @@
 .headline3xl {
   font-weight: var(--bold);
   font-size: 6em;
-  line-height: 100%;
+  line-height: 115%;
 }
 
 .headline2xl {
   font-weight: var(--bold); font-size: 4.8em;
-  line-height: 125%;
+  line-height: 115%;
 }
 
 .headlinexl {
   font-weight: var(--bold);
   font-size: 3.6em;
-  line-height: 116%;
+  line-height: 115%;
 }
 
 .headlinelg {
   font-weight: var(--semibold);
   font-size: 3em;
-  line-height: 133%;
+  line-height: 115%;
 }
 
 .headlinemd {
   font-weight: var(--semibold);
   font-size: 2.4em;
-  line-height: 150%;
+  line-height: 115%;
 }
 
 .headlinesm {
   font-weight: var(--semibold);
   font-size: 1.6em;
-  line-height: 100%;
+  line-height: 115%;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -41,22 +41,27 @@
 
 .bodyxl {
   font-size: 2em;
-  line-height: 150%;
+  line-height: 115%;
 }
 
 .bodylg {
   font-size: 1.8em;
-  line-height: 164%;
+  line-height: 115%;
 }
 
 .bodymd {
   font-size: 1.6em;
-  line-height: 150%;
+  line-height: 115%;
 }
 
 .bodysm {
   font-size: 1.4em;
-  line-height: 150%; 
+  line-height: 115%;
+}
+
+.bodyxs {
+  font-size: 1.2em;
+  line-height: 115%;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -64,17 +69,17 @@
 
 .labelmd {
   font-size: 1.4em;
-  line-height: 100%;
+  line-height: 115%;
 }
 
 .labelsm {
   font-size: 1.2em;
-  line-height: 1.4em;
+  line-height: 115%;
 }
 
 .captionmd {
   font-size: 1.2em;
-  line-height: 1.5em;
+  line-height: 115%;
 }
 
 .nav-link {
@@ -84,10 +89,10 @@
 
 .link {
   font-size: 1.6em;
-  line-height: 2.2em;
+  line-height: 115%;
 }
 
 .badge-text {
   font-size: 1.2em;
-  line-height: 1.5em;
+  line-height: 115%;
 }

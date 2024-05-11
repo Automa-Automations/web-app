@@ -1,4 +1,5 @@
 const addHeadContent = ({
+  route,
   title="Automa Automations", 
   description="Automa is a project that focuses on making AI & AI automation available to the general public at a low-low cost of 10$ for the base hosted plan, or 0$ for self hosting all of our infrastructure.",
   iconPath="/assets/brand/automa-icon.svg",
@@ -10,8 +11,9 @@ const addHeadContent = ({
     <title>${title}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="${description}">
-    <link href="/css/theme/index.css" rel="stylesheet">
+    <meta name="description" content="${description}" />
+    <link href="/css/theme/index.css" rel="stylesheet" />
+    <link href="/css/routes/${route}.css" rel="stylesheet" />
     <link rel="icon" type="x-icon/image" href="${iconPath}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
