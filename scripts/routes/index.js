@@ -1,5 +1,7 @@
-import { navbar } from "../../components";
-import { addHeadContent } from "../utils";
+import { navbar, button } from "../../components";
+import { addHeadContent, setGlobalStyles } from "../utils";
 
 addHeadContent({route: "index", textStyles: true});
+setGlobalStyles();
 navbar("#navbar")
+button()

@@ -11,8 +11,8 @@
 /* DEFAULT DESKTOP CARD (LG):  */
 
 .card.card-lg {
-  gap: 3.2em;
-  padding: 3em 4em;
+  gap: 32px;
+  padding: 30px 40px;
   background-color: var(--overlay50);
   backdrop-filter: var(--blur50);
 }
@@ -21,8 +21,8 @@
 /* DEFAULT MOBILE CARD (SM):  */
 
 .card.card-sm {
-  gap: 1.5em;
-  padding: 1.5em 2em;
+  gap: 15px;
+  padding: 15px 20px;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -40,16 +40,16 @@
 /* OVERLAY DESKTOP CARD (LG):  */
 
 .overlay-card.card-lg {
-  padding: 2em 3em;  
-  gap: 1.6em;
+  padding: 20px 30px;
+  gap: 16px;
 }
 
 /*-------------------------------------*/
 /* OVERLAY DEFAULT CARD (MD):  */
 
 .overlay-card.card-md {
-  padding: 2em 3em;  
-  gap: 1em;
+  padding: 20px 30px;  
+  gap: 10px;
 }
 
 
@@ -57,8 +57,8 @@
 /* OVERLAY MOBILE CARD (SM):  */
 
 .overlay-card.card-sm {
-  padding: 1em 1.5em;  
-  gap: 1em;
+  padding: 10px 15px;  
+  gap: 10px;
 }
 
 /*-------------------------------------*/
@@ -66,8 +66,8 @@
 
 .overlay-card.chip-card {
   flex-direction: row;
-  padding: 2em 3em;  
-  gap: 1em;
+  padding: 20px 30px;
+  gap: 10px;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -78,6 +78,6 @@
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
-  padding: 2.4em;
+  padding: 24px;
   border-radius: var(--rounded-lg);
 }

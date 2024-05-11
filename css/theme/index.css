@@ -124,7 +124,9 @@ body {
 
 button {
   border-radius: var(--rounded-4xl);
+  color: var(--text);
   border: none;
+  cursor: pointer;
 }
 
 img {
