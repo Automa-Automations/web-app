@@ -30,6 +30,24 @@ main {
   background: var(--attention-text-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  border-right: 10px solid yellow;
+  padding-right: 5px;
+  animation: blink .8s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0% {
+    border-right-color: rgba(2355, 255, 0, 0.5);
+  }
+  33% {
+    border-right-color: rgba(2355, 255, 0, 0);
+  }
+  66% {
+    border-right-color: rgba(2355, 255, 0, 0.5);
+  }
+  100% {
+    border-right-color: rgba(2355, 255, 0, 1);
+  }
 }
 
 #hero-bottom-text {

@@ -63,14 +63,10 @@ const typewriter = async (selector, textArray, typeSpeed, pauseDuration, removeW
         console.log(character);
         await sleep(sleepBetweenCharacter).then(() => console.log(textElement.textContent))
       }
-
-      const headerText = textElement.textContent;
-      for (const character of text) {
-        const newString = text.substring(0, textElement.textContent.length-1);
-        console.log(`new String: ${newString}`);
-        textElement.textContent = newString;
+      const headerText =  textElement.textContent;
+      for (let i = 0; i < headerText.length; i++) {
+        textElement.textContent -= headerText[i+headerText.length]
       }
-      textElement.innerHTML="&nbsp;";
       await sleep(pauseDuration*1000)
     }
   }
