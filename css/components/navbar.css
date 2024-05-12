@@ -3,7 +3,8 @@ nav {
   width: 100%;
   height: 10vh;
   align-items: center;
-  justify-content: space-between; padding: 0px 21px;
+  justify-content: space-between;
+  padding: 0px 21px;
 }
 
 nav header {
@@ -20,7 +21,8 @@ nav header img {
 }
 
 #menu-btn {
-  vertical-align: middle; cursor: pointer;
+  vertical-align: middle;
+  cursor: pointer;
   line-height: 100%;
   background-color: transparent;
   border: none;
@@ -28,7 +30,7 @@ nav header img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 #nav-list {
@@ -58,7 +60,7 @@ nav header img {
   top: 100%;
   height: 2.5px;
   width: 0px;
-  transition: width .45s;
+  transition: width 0.45s;
   border-radius: 5px;
 }
 
@@ -67,12 +69,12 @@ nav header img {
 }
 
 .slide-from-right {
-  animation: slide-from-right .5s ease-in-out;
+  animation: slide-from-right 0.5s ease-in-out;
   z-index: 1;
 }
 
 .slide-from-left {
-  animation: slide-from-left .5s ease-in-out;
+  animation: slide-from-left 0.5s ease-in-out;
   z-index: -1;
   opacity: 0;
 }
@@ -86,7 +88,7 @@ nav header img {
     right: 5vh;
     opacity: 1;
   }
-} 
+}
 
 @keyframes slide-from-left {
   0% {
@@ -97,14 +99,14 @@ nav header img {
     right: 0;
     opacity: 0;
   }
-} 
+}
 
 @keyframes fade-in {
   0% {
     opacity: 0%;
   }
   100% {
-  opacity: 100%;
+    opacity: 100%;
   }
 }
 
@@ -121,7 +123,7 @@ nav header img {
     animation: fade-in 2s ease-in-out;
     gap: 25px;
     position: static;
-    flex-direction: row; 
+    flex-direction: row;
     padding: 0;
     border: none;
   }

@@ -1,7 +1,4 @@
-import navbar from "./navbar"
-import button from "./button"
+import navbar from "./navbar";
+import button from "./button";
 
-export {
-  navbar,
-  button,
-}
+export { navbar, button };

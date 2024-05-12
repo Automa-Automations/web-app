@@ -48,16 +48,15 @@
 /* OVERLAY DEFAULT CARD (MD):  */
 
 .overlay-card.card-md {
-  padding: 20px 30px;  
+  padding: 20px 30px;
   gap: 10px;
 }
-
 
 /*-------------------------------------*/
 /* OVERLAY MOBILE CARD (SM):  */
 
 .overlay-card.card-sm {
-  padding: 10px 15px;  
+  padding: 10px 15px;
   gap: 10px;
 }
 

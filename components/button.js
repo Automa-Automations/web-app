@@ -1,7 +1,7 @@
-import { addComponentStyleSheetToHead } from "../scripts/utils"
+import { addComponentStyleSheetToHead } from "../scripts/utils";
 
 const button = () => {
   addComponentStyleSheetToHead("buttons");
-}
+};
 
 export default button;

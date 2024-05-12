@@ -12,7 +12,6 @@ const setGlobalStyles = () => {
   addClass("button", "headlinesm");
   // Set badge text styles
   addClass(".badge", "badge-text");
-}
-
+};
 
 export default setGlobalStyles;
