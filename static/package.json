@@ -4,13 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
     "format": "find . \\( -name \"*.js\" -o -name \"*.html\" -o -name \"*.css\" \\) -not -path \"./node_modules/*\" | grep -v \"node_modules\" | xargs npx prettier --write"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
-    "vite": "^5.2.0"
   }
 }
