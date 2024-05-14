@@ -1,4 +1,7 @@
-import { navbar, button } from "../../components";
+// import { navbar, button } from "../../components";
+import "../../css/theme/index.css";
+import "../../css/routes/index.css";
+
 import {
   isMobile,
   isMediumWidth,
@@ -7,15 +10,16 @@ import {
   setGlobalStyles,
 } from "../utils";
 
-addHeadContent({ route: "index", textStyles: true });
+// addHeadContent({ route: "index", textStyles: true });
 setGlobalStyles();
 
-// Navbar functionality
-navbar("#navbar");
-
-// Import button styles
-button();
-
+//
+// // Navbar functionality
+// navbar("#navbar");
+//
+// // Import button styles
+// button();
+//
 const giveMoreDescriptiveTextOnDesktop = () => {
   const isMobileWidth = isMobile();
   const isMediumWithResponse = isMediumWidth();
