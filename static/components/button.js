@@ -1,4 +1,4 @@
-import { addComponentStyleSheetToHead } from "../scripts/utils";
+import { addComponentStyleSheetToHead } from "../scripts/utils/index.js";
 
 const button = () => {
   addComponentStyleSheetToHead("buttons");
