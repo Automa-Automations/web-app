@@ -16,12 +16,12 @@ Here are the technologies used for the web application:
 4. Flask
 
 ## Project Motive:
-Me and my <a href="https://github.com/AdonisCodes" target="_blank">brother</a>, we both had this desire to automate stuff, especially content creation. This stems from a few years back, where me and my brother mass uploaded Youtube Shorts, on multiple channels. We sold those channels. The problem was, we were like monkeys, uploading all the shorts manually. That led to us making some automation scripts, that eventually led to this. 
+Me and my <a href="https://github.com/AdonisCodes" target="_blank">brother</a>, we both have this desire to automate stuff, especially content creation. This stems from a few years back, where me and my brother mass uploaded Youtube Shorts, on multiple Youtube channels. We sold those channels. The problem was, we were like monkeys, uploading all the shorts manually. Uploading a few hundred shorts a day, it was extremely repetitive and boring. That led to us making some automation scripts, that eventually led to this. 
 
-What are our primary objective for Automa Automations? Automa Automation aims to help content creators upload content more consistently, allowing users to spend less time to achieve more. 
+What are our primary objective for Automa Automations? Automa Automation aims to help content creators upload content more consistently, allowing them to spend less time and money to achieve more. 
 
 ## Future Vision:
-Currently, our goal is to launch a MVP in the next 1 - 2 months. By then, we aim to at least auomate uploading AI generated images to an Instagram account, fully automated. Users will be able to create an Instagram Account, and attach the "AI Image Uploader Bot" to that Instagram Account. There will be some configuration options aswell. I know, that doesn't sound that impressive. This is just the start, as we plan on working on Automa Automations for years to come.
+Currently, our goal is to launch a MVP in the next 1 - 2 months. By then, we aim to at least auomate uploading AI generated images to an Instagram account, fully automated. Users will be able to create an Instagram account, and attach the "AI Image Uploader Bot" to that Instagram Account. There will be some configuration options aswell. I know, that doesn't sound that impressive. This is just the start, as we plan on working on Automa Automations for years to come.
 
 Our future vision is to support all major social media platforms. Not only that, we aim to support automatically creating content in all different forms, from shorts, long videos, blog posts, and so much more.
 
