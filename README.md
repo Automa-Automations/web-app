@@ -6,7 +6,7 @@
 
 <a href="https://web-app-williamferns1.replit.app/" target="_blank">Click here</a> to check out the web application.
 
-Automa Automations is software designed to automate content creation using AI. While this is the web application, my brother and I are working on the <a href="https://github.com/Automa-Automations/automa-mobile-app" target="_blank">iOS application</a>. If you are a designer, a Kotlin developer, or any other type of developer and are looking to collaborate, feel free to check out <a href="https://github.com/Automa-Automations/join-our-team" target="_blank">how to become a team member</a>. 
+Automa Automations is software designed to automate content creation using AI. While this is the web application, my brother and I are working on the <a href="https://github.com/Automa-Automations/automa-mobile-app" target="_blank">iOS application</a>. If you are a designer, a Kotlin developer, or any other type of developer and are looking to collaborate, feel free to check out [how to become a team member](https://github.com/Automa-Automations/.github/blob/main/profile/join_our_team.md). 
 
 ## Technologies
 Here are the technologies used for the web application:
