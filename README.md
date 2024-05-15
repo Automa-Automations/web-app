@@ -4,7 +4,10 @@
 
 ![image](https://github.com/Automa-Automations/web-app/assets/141557971/39dbba66-17ad-486e-9e13-3a7624010ac7)
 
-Automa Automations is a software, to automate content creation using AI. While this is the web-application, my brother are working on the <a href="" target="_blank">IOS application</a>. If you are by chance a designer or a Kotlin devleoper, or any other developer by chance, feel free to check out the <a href="" target="_blank">Contributions Guide</a>. 
+<a href="https://web-app-williamferns1.replit.app/" target="_blank">Click here</a> to check out the Web Application.
+
+Automa Automations is a software, to automate content creation using AI. While this is the web-application, my brother are working on the <a href="https://github.com/Automa-Automations/automa-mobile-app" target="_blank">IOS application</a>. If you are by chance a designer or a Kotlin devleoper, or any other developer by chance, feel free to check out the <a href="https://github.com/Automa-Automations/Contributions" target="_blank">Contributions Guide</a>. 
+
 ## Technologies:
 Here are the technologies used for the web application: 
 1. HTML
