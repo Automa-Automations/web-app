@@ -57,10 +57,11 @@ const typewriter = async (
   selector, // the text element selector for typewriter effect
   textArray, // an array of strings, with all the the text.
   typeSpeed, // the total characters to type per second. 
-  pauseDuration, // the total time to pause after removing all the text, before it starts typing the next string in the textArray.
-  removeWordInterval, // the total time it should pause before removing the next word
-  pauseAfterTypingDuration, // the time to pause after typing the text, before it starts typing in the next word. 
+
   loopNumber, // The total amount of times it should simulate the typewriter effect.
+  removeWordInterval, // the total time it should pause before removing the next word
+  pauseDuration, // the total time to pause after removing all the text, before it starts typing the next string in the textArray.
+  pauseAfterTypingDuration, // the time to pause after typing the text, before it starts removing the text. 
 ) => {
   const textElement = document.querySelector(selector);
 
@@ -135,6 +136,5 @@ const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-
 // Call the typewriter function on '#hero-title'
-typewriter("#hero-title", textArray, 6, 2, 0.5, 1, 2);
+typewriter("#hero-title", textArray, 6, 2, 0.5, 2, 1);
