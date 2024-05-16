@@ -54,36 +54,69 @@ giveMoreDescriptiveTextOnDesktop();
 
 // typeSpeed: characters typed per second
 const typewriter = async (
-  selector,
-  textArray,
-  typeSpeed,
-  pauseDuration,
-  removeWordInterval,
+  selector, // the text element selector for typewriter effect
+  textArray, // an array of strings, with all the the text.
+  typeSpeed, // the total characters to type per second. 
+  pauseDuration, // the total time to pause after removing all the text, before it starts typing the next string in the textArray.
+  removeWordInterval, // the total time it should pause before removing the next word
+  pauseAfterTypingDuration, // the time to pause after typing the text, before it starts typing in the next word. 
+  loopNumber, // The total amount of times it should simulate the typewriter effect.
 ) => {
   const textElement = document.querySelector(selector);
 
   if (textElement) {
     textElement.textContent = "";
-    //
+
+    // 1000 / total characters per second, to get the sleep duration after typing each character. 
     const sleepBetweenCharacter = 1000 / typeSpeed;
     console.log(sleepBetweenCharacter);
-    for (const text of textArray) {
-      for (const character of text) {
-        textElement.textContent += character;
-        console.log(character);
-        await sleep(sleepBetweenCharacter).then(() =>
-          console.log(textElement.textContent),
-        );
-      }
 
-      const headerText = textElement.textContent;
-      for (const character of text) {
-        const newString = text.substring(0, textElement.textContent.length - 1);
-        console.log(`new String: ${newString}`);
-        textElement.textContent = newString;
+    // Loop through the textArray "loopNumber" times.
+    for (let i = 0; i < loopNumber; i++) {
+      // Loop for each text string in textArray
+      for (let j = 0; j < textArray.length; j++) {
+        const text = textArray[j];
+        // Inner-loop to type in each individual character in the text.
+        for (const character of text) {
+          textElement.textContent += character;
+          console.log(character);
+          await sleep(sleepBetweenCharacter).then(() =>
+            console.log(textElement.textContent),
+          );
+        }
+        await sleep(pauseAfterTypingDuration * 1000);
+
+        // Turn the text string into an array of words.
+        const wordsArray = text.split(" ");
+        console.log(wordsArray);
+
+        // If it is not the last loop, and the last textArray text string, it should remove the text.
+        if (i !== loopNumber - 1 || j !== textArray.length - 1) {
+          // Loop for removing each word, simulating "ctr+backspace"
+          for (let p = 1; p <= wordsArray.length; p++) {
+
+            // Make a new string, by slicing the array to simulate removing a word.
+            const newString = wordsArray.slice(0, -p).join(" ");
+            console.log(`new String: ${newString}`);
+            textElement.textContent = newString;
+
+            if (!textElement.textContent) {
+              // Add an empty whitespace so that the page doesn't get smaller and bigger from there no longer being any textContent in textElement..
+              textElement.innerHTML = "&nbsp;";
+            } else {
+              // This means that there are another word to be removed, as the textContent is valid. 
+              await sleep(removeWordInterval * 1000);
+            }
+          }
+        } 
+        // If it is the last loop iteration, and it is the last text string in the text array, it should not remove the text at all. It should remove the blinking cursor.
+        else {
+          await sleep(2000);
+          textElement.style.border = "none";
+        }
+        // Sleep for the pauseDuration.
+        await sleep(pauseDuration * 1000);
       }
-      textElement.innerHTML = "&nbsp;";
-      await sleep(pauseDuration * 1000);
     }
   }
 };
@@ -97,8 +130,11 @@ const textArray = [
   "Get Started Today",
 ];
 
+// Helper function to simulate sleep behavior, by returning a promise.
 const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-typewriter("#hero-title", textArray, 6, 3, 0.5);
+
+// Call the typewriter function on '#hero-title'
+typewriter("#hero-title", textArray, 6, 2, 0.5, 1, 2);
