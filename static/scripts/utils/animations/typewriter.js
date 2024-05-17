@@ -6,8 +6,7 @@ import { sleep } from "../other.js";
  * @param {string} selector - The text element selector for the typewriter effect.
  * @param {string[]} textArray - An array of strings containing the text to be typed.
  * @param {number} typeSpeed - The number of characters to type per second.
- * @param {number} loopNumber - The number of times to simulate the typewriter effect.
- * @param {number} removeWordInterval - The time to pause before removing the next word (in seconds).
+ * @param {number} loopNumber - The number of times to simulate the typewriter effect. @param {number} removeWordInterval - The time to pause before removing the next word (in seconds).
  * @param {number} pauseDuration - The time to pause after removing all text before typing the next string (in seconds).
  * @param {number} pauseAfterTypingDuration - The time to pause after typing the text before starting to remove the text (in seconds).
  */
@@ -37,6 +36,7 @@ const typewriter = async (
 
         // Pause after typing the entire text string.
         await sleep(pauseAfterTypingDuration * 1000);
+
         // If not the last loop or last text string, remove the text.
         if (i !== loopNumber - 1 || j !== textArray.length - 1) {
           await typewriterRemoveText(text, removeWordInterval, textElement);

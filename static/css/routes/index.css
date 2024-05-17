@@ -38,16 +38,16 @@ main {
 
 @keyframes blink {
   0% {
-    border-right-color: rgba(2355, 255, 0, 0.5);
+    border-right-color: rgba(255, 255, 0, 0.5);
   }
   33% {
-    border-right-color: rgba(2355, 255, 0, 0);
+    border-right-color: rgba(255, 255, 0, 0);
   }
   66% {
-    border-right-color: rgba(2355, 255, 0, 0.5);
+    border-right-color: rgba(255, 255, 0, 0.5);
   }
   100% {
-    border-right-color: rgba(2355, 255, 0, 1);
+    border-right-color: rgba(255, 255, 0, 1);
   }
 }
 
