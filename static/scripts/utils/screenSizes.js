@@ -2,27 +2,26 @@ class ScreenSizes {
   mobileWidth = 450;
   tabletWidth = 750;
   desktopWidth = 1000;
-
-  constructor(mobileWidth, tabletWidth, desktopWidth) {
+  constructor(mobileWidth = this.mobileWidth, tabletWidth = this.tabletWidth, desktopWidth = this.desktopWidth) {
     this.windowWidth = window.innerWidth;
     this.mobileWidth = mobileWidth;
     this.tabletWidth = tabletWidth;
     this.desktopWidth = desktopWidth;
   };
 
-  isMobile = () => {
+  isMobile() {
     return this.windowWidth <= this.mobileWidth;
   };
 
-  isDesktop = () => {
+  isDesktop() {
     return this.windowWidth >= this.desktopWidth;
   };
 
-  isMediumWidth = () => {
+  isMediumWidth() {
     return this.windowWidth > this.mobileWidth && this.windowWidth < this.tabletWidth;
   };
 
-  isTabletWidth = () => {
+  isTabletWidth() {
     return this.windowWidth >= this.tabletWidth && this.windowWidth < this.desktopWidth;
   };
 }

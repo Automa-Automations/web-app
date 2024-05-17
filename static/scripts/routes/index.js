@@ -1,12 +1,10 @@
 import { navbar, button } from "/static/components/index.js";
 
 import {
-  isMobile,
-  isMediumWidth,
-  isTabletWidth,
+  ScreenSizes,
+  typewriter,
   addHeadContent,
   setGlobalStyles,
-  typewriter,
 } from "../utils/index.js";
 
 addHeadContent({ route: "index", textStyles: true });
@@ -22,6 +20,7 @@ const giveMoreDescriptiveTextOnDesktop = () => {
   const heroTitle = document.getElementById("hero-title");
   const heroSubText = document.getElementById("hero-sub-text");
   const heroBottomText = document.getElementById("hero-bottom-text");
+  const sizes = new ScreenSizes();
 
   // Default for medium and tablet width;
   let textArray = [
@@ -31,8 +30,7 @@ const giveMoreDescriptiveTextOnDesktop = () => {
     "Automate Content",
     "Get Started Today",
   ];
-
-  if (isMobile()) {
+  if (sizes.isMobile()) {
     textArray = [
       "Automate Content",
       "Leverage AI",
@@ -41,11 +39,11 @@ const giveMoreDescriptiveTextOnDesktop = () => {
       "Save Headaches",
       "Get Started Today",
     ];
-  } else if (isMediumWidth()) {
+  } else if (sizes.isMediumWidth()) {
     heroTitle.classList = "headlinexl";
     heroSubText.classList = "bodymd";
     heroBottomText.classList = "bodysm";
-  } else if (isTabletWidth()) {
+  } else if (sizes.isTabletWidth()) {
     heroTitle.classList = "headline2xl";
     heroSubText.classList = "bodylg";
     heroBottomText.classList = "bodymd";
