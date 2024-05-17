@@ -1,6 +1,6 @@
 import {
   ScreenSizes,
-  addComponentStyleSheetToHead,
+  HeadContent,
 } from "../scripts/utils/index.js";
 
 // Param is the navbar element to put in the children
@@ -30,7 +30,7 @@ const navbar = (navbarSelector) => {
     </div>
   `;
   navbarElement.innerHTML = navbarInnerHTML;
-  addComponentStyleSheetToHead("navbar");
+  HeadContent.addComponentStyleSheetToHead("navbar");
 
   const menuButton = document.getElementById("menu-btn");
   const navItems = document.getElementById("nav-list");

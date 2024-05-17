@@ -3,11 +3,11 @@ import { navbar, button } from "/static/components/index.js";
 import {
   ScreenSizes,
   typewriter,
-  addHeadContent,
+  HeadContent,
   setGlobalStyles,
 } from "../utils/index.js";
 
-addHeadContent({ route: "index", textStyles: true });
+HeadContent.addHeadContent({ route: "index", textStyles: true });
 setGlobalStyles();
 
 // Navbar functionality
