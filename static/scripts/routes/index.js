@@ -6,11 +6,11 @@ import {
   isTabletWidth,
   addHeadContent,
   setGlobalStyles,
+  typewriter,
 } from "../utils/index.js";
 
 addHeadContent({ route: "index", textStyles: true });
 setGlobalStyles();
-
 
 // Navbar functionality
 navbar("#navbar");
@@ -19,86 +19,56 @@ navbar("#navbar");
 button();
 
 const giveMoreDescriptiveTextOnDesktop = () => {
-  const isMobileWidth = isMobile();
-  const isMediumWithResponse = isMediumWidth();
-  const isTabletWidthResponse = isTabletWidth();
+  const heroTitle = document.getElementById("hero-title");
+  const heroSubText = document.getElementById("hero-sub-text");
+  const heroBottomText = document.getElementById("hero-bottom-text");
 
-  if (!isMobileWidth) {
-    const heroTitle = document.getElementById("hero-title");
-    const heroSubText = document.getElementById("hero-sub-text");
-    const heroBottomText = document.getElementById("hero-bottom-text");
+  // Default for medium and tablet width;
+  let textArray = [
+    "Automate Social Media",
+    "Save Time and Money",
+    "Grow Passively",
+    "Automate Content",
+    "Get Started Today",
+  ];
 
-    heroTitle.textContent = "Use AI to Automate Social Media";
+  if (isMobile()) {
+    textArray = [
+      "Automate Content",
+      "Leverage AI",
+      "Save Time",
+      "Save Money",
+      "Save Headaches",
+      "Get Started Today",
+    ];
+  } else if (isMediumWidth()) {
+    heroTitle.classList = "headlinexl";
+    heroSubText.classList = "bodymd";
+    heroBottomText.classList = "bodysm";
+  } else if (isTabletWidth()) {
+    heroTitle.classList = "headline2xl";
+    heroSubText.classList = "bodylg";
+    heroBottomText.classList = "bodymd";
+  } else {
+    heroTitle.classList = "headline3xl";
+    heroSubText.classList = "bodyxl";
+    heroBottomText.classList = "bodymd";
+    textArray = [
+      "Use AI to Automate Social Media",
+      "Save Time and Money",
+      "Grow Passively",
+      "Automate Content Creation",
+      "Automate Content Scheduling",
+      "Get Started Today",
+    ];
     heroSubText.textContent =
       "Automa Automations will save you time, by automating the content creation and content scheduling process.";
     heroBottomText.textContent =
       "Automa Automations is still in development, meaning that all the base features aren’t integrated yet.";
-
-    if (isMediumWithResponse) {
-      heroTitle.classList = "headlinexl";
-      heroSubText.classList = "bodymd";
-      heroBottomText.classList = "bodysm";
-    } else if (isTabletWidthResponse) {
-      heroTitle.classList = "headline2xl";
-      heroSubText.classList = "bodylg";
-      heroBottomText.classList = "bodymd";
-    } else {
-      heroTitle.classList = "headline3xl";
-      heroSubText.classList = "bodyxl";
-      heroBottomText.classList = "bodymd";
-    }
   }
+
+  // Call the typewriter function on '#hero-title'
+  typewriter("#hero-title", textArray, 6, 2, 0.5, 2, 1);
 };
 
 giveMoreDescriptiveTextOnDesktop();
-
-// typeSpeed: characters typed per second
-const typewriter = async (
-  selector,
-  textArray,
-  typeSpeed,
-  pauseDuration,
-  removeWordInterval,
-) => {
-  const textElement = document.querySelector(selector);
-
-  if (textElement) {
-    textElement.textContent = "";
-    //
-    const sleepBetweenCharacter = 1000 / typeSpeed;
-    console.log(sleepBetweenCharacter);
-    for (const text of textArray) {
-      for (const character of text) {
-        textElement.textContent += character;
-        console.log(character);
-        await sleep(sleepBetweenCharacter).then(() =>
-          console.log(textElement.textContent),
-        );
-      }
-
-      const headerText = textElement.textContent;
-      for (const character of text) {
-        const newString = text.substring(0, textElement.textContent.length - 1);
-        console.log(`new String: ${newString}`);
-        textElement.textContent = newString;
-      }
-      textElement.innerHTML = "&nbsp;";
-      await sleep(pauseDuration * 1000);
-    }
-  }
-};
-
-const textArray = [
-  "Automate Content",
-  "Leverage AI",
-  "Save Time",
-  "Save Money",
-  "Save Headaches",
-  "Get Started Today",
-];
-
-const sleep = (ms) => {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-};
-
-typewriter("#hero-title", textArray, 6, 3, 0.5);
