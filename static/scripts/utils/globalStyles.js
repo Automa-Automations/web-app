@@ -1,5 +1,5 @@
 class GlobalStyles {
-  globalStylesArray = [
+  static globalStylesArray = [
     {
       "selector": "button",
       "class": "headlinesm",
@@ -10,7 +10,7 @@ class GlobalStyles {
     }
   ]
 
-  constructor(globalStylesArray = this.globalStylesArray) {
+  constructor(globalStylesArray = GlobalStyles.globalStylesArray) {
     this.globalStylesArray = globalStylesArray;
     this.#setGlobalStyles();
   }
@@ -20,23 +20,25 @@ class GlobalStyles {
     this.#setGlobalStyles();
   }
 
+  get globalStyles() {
+    return this.globalStylesArray;
+  }
+
   appendStyles(stylesObjectsToAppend) {
-    this.globalStylesArray.concat(stylesObjectsToAppend);
-    this.#setGlobalStyles()
+    this.globalStylesArray = [...this.globalStylesArray, ...stylesObjectsToAppend];
+    this.#setGlobalStyles();
   }
 
   #addClass(selector, classToAdd) {
     const elements = document.querySelectorAll(selector);
-    if (elements) {
-      elements.forEach((element) => element.classList.add(classToAdd));
-    }
-  };
+    elements.forEach((element) => element.classList.add(classToAdd));
+  }
 
   #setGlobalStyles() {
     for (const styleObject of this.globalStylesArray) {
       this.#addClass(styleObject["selector"], styleObject["class"]);
     }
-  };
+  }
 }
 
 export default GlobalStyles;
