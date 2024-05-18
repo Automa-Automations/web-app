@@ -106,9 +106,7 @@ class Typewriter {
   };
 }
 
-class Animations {
-  static typewriter = Typewriter;
+export {
+  Typewriter,
 }
 
-
-export default Animations;

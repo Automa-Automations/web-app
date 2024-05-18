@@ -34,6 +34,26 @@ class HeadContent {
     const headElement = document.querySelector("head");
     headElement.innerHTML = headContent;
   };
+
+  static removeHeadContent() {
+    const head = document.querySelector("head");
+    head.innerHTML = ""
+  }
+
+  static get headContent() {
+    const head = document.querySelector("head");
+    return head.innerHTML;
+  }
+  
+  static set headContent(innerHTML) {
+    const head = document.querySelector("head");
+    head.innerHTML = innerHTML;
+  }
+
+  static appendHeadContent(innerHTML) {
+    const head = document.querySelector("head");
+    head.innerHTML += innerHTML;
+  }
 }
 
 export default HeadContent;

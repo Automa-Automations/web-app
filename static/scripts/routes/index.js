@@ -2,7 +2,7 @@ import { navbar, button } from "/static/components/index.js";
 
 import {
   ScreenSizes,
-  Animations,
+  Typewriter,
   HeadContent,
   GlobalStyles,
 } from "../utils/index.js";
@@ -67,9 +67,8 @@ const giveMoreDescriptiveTextOnDesktop = async () => {
   }
 
   // Call the typewriter function on '#hero-title'
-  const typewriter = new Animations.typewriter("#hero-title", textArray, 6, 2, 0.5, 2, 1);
+  const typewriter = new Typewriter("#hero-title", textArray, 6, 2, 0.5, 2, 1);
   await typewriter.start()
-
 };
 
 giveMoreDescriptiveTextOnDesktop();
