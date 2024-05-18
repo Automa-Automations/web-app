@@ -1,12 +1,12 @@
 import HeadContent from "./headContent.js";
-import setGlobalStyles from "./setGlobalStyles.js";
+import GlobalStyles from "./globalStyles.js";
 import ScreenSizes from "./screenSizes.js";
 import { sleep } from "./other.js";
 import Animations from "./animations/index.js";
 
 export {
   HeadContent,
-  setGlobalStyles,
+  GlobalStyles,
   ScreenSizes,
   sleep,
   Animations,

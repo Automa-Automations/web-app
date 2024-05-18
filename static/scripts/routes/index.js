@@ -4,12 +4,13 @@ import {
   ScreenSizes,
   Animations,
   HeadContent,
-  setGlobalStyles,
+  GlobalStyles,
 } from "../utils/index.js";
 import Typewriter from "../utils/animations/typewriter.js";
 
 HeadContent.addHeadContent({ route: "index", textStyles: true });
-setGlobalStyles();
+// It already uses the default global styles defined in the class, if no styles is provided
+const globalStyles = new GlobalStyles() 
 
 // Navbar functionality
 navbar("#navbar");
