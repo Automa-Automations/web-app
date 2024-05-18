@@ -4,7 +4,7 @@ class HeadContent {
 
     if (!head) {
       console.error("No head element found");
-      return
+      return;
     }
 
     const link = document.createElement("link");
@@ -12,7 +12,7 @@ class HeadContent {
     link.setAttribute("href", `/static/css/components/${componentName}.css`);
 
     head.appendChild(link);
-  };
+  }
 
   static addHeadContent({
     route,
@@ -40,21 +40,21 @@ class HeadContent {
 
     if (!headElement) {
       console.error("No head element found");
-      return
+      return;
     }
 
     headElement.innerHTML = headContent;
-  };
+  }
 
   static removeHeadContent() {
     const head = document.querySelector("head");
 
     if (!head) {
       console.error("No head element found");
-      return
+      return;
     }
 
-    head.innerHTML = ""
+    head.innerHTML = "";
   }
 
   static get headContent() {
@@ -62,18 +62,18 @@ class HeadContent {
 
     if (!head) {
       console.error("No head element found");
-      return
+      return;
     }
 
     return head.innerHTML;
   }
-  
+
   static set headContent(innerHTML) {
     const head = document.querySelector("head");
 
     if (!head) {
       console.error("No head element found");
-      return
+      return;
     }
 
     head.innerHTML = innerHTML;
@@ -84,7 +84,7 @@ class HeadContent {
 
     if (!head) {
       console.error("No head element found");
-      return
+      return;
     }
 
     head.innerHTML += innerHTML;

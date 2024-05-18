@@ -19,11 +19,17 @@ class ScreenSizes {
   }
 
   isMediumWidth() {
-    return this.windowWidth > this.#mobileWidth && this.windowWidth < this.#tabletWidth;
+    return (
+      this.windowWidth > this.#mobileWidth &&
+      this.windowWidth < this.#tabletWidth
+    );
   }
 
   isTabletWidth() {
-    return this.windowWidth >= this.#tabletWidth && this.windowWidth < this.#desktopWidth;
+    return (
+      this.windowWidth >= this.#tabletWidth &&
+      this.windowWidth < this.#desktopWidth
+    );
   }
 
   set mobileWidth(width) {

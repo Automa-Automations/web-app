@@ -9,7 +9,7 @@ import {
 
 HeadContent.addHeadContent({ route: "index", textStyles: true });
 // It already uses the default global styles defined in the class, if no styles is provided
-const globalStyles = new GlobalStyles() 
+const globalStyles = new GlobalStyles();
 
 // Navbar functionality
 navbar("#navbar");
@@ -68,7 +68,7 @@ const giveMoreDescriptiveTextOnDesktop = async () => {
 
   // Call the typewriter function on '#hero-title'
   const typewriter = new Typewriter("#hero-title", textArray, 6, 2, 0.5, 2, 1);
-  await typewriter.start()
+  await typewriter.start();
 };
 
 giveMoreDescriptiveTextOnDesktop();

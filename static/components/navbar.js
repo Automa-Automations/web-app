@@ -1,7 +1,4 @@
-import {
-  ScreenSizes,
-  HeadContent,
-} from "../scripts/utils/index.js";
+import { ScreenSizes, HeadContent } from "../scripts/utils/index.js";
 
 // Param is the navbar element to put in the children
 const navbar = (navbarSelector) => {

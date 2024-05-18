@@ -19,7 +19,7 @@ class Typewriter {
     loopNumber = 1,
     removeWordInterval = 1,
     pauseDuration = 1,
-    pauseAfterTypingDuration = 1
+    pauseAfterTypingDuration = 1,
   ) {
     this.selector = selector;
     this.textArray = textArray;
@@ -61,7 +61,11 @@ class Typewriter {
 
           // If not the last loop or last text string, remove the text.
           if (i !== loopNumber - 1 || j !== textArray.length - 1) {
-            await this.#typewriterRemoveText(text, removeWordInterval, textElement);
+            await this.#typewriterRemoveText(
+              text,
+              removeWordInterval,
+              textElement,
+            );
           } else {
             // On the last loop and last text string, do not remove the text, just remove the blinking cursor.
             await this.#stopBlinking(textElement);

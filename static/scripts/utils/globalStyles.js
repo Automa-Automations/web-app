@@ -1,14 +1,14 @@
 class GlobalStyles {
   static globalStylesArray = [
     {
-      "selector": "button",
-      "class": "headlinesm",
+      selector: "button",
+      class: "headlinesm",
     },
     {
-      "selector": ".badge",
-      "class": "badge-text",
-    }
-  ]
+      selector: ".badge",
+      class: "badge-text",
+    },
+  ];
 
   constructor(globalStylesArray = GlobalStyles.globalStylesArray) {
     this.globalStylesArray = globalStylesArray;
@@ -25,7 +25,10 @@ class GlobalStyles {
   }
 
   appendStyles(stylesObjectsToAppend) {
-    this.globalStylesArray = [...this.globalStylesArray, ...stylesObjectsToAppend];
+    this.globalStylesArray = [
+      ...this.globalStylesArray,
+      ...stylesObjectsToAppend,
+    ];
     this.#setGlobalStyles();
   }
 

@@ -4,10 +4,4 @@ import ScreenSizes from "./screenSizes.js";
 import { sleep } from "./other.js";
 import { Typewriter } from "./animations.js";
 
-export {
-  HeadContent,
-  GlobalStyles,
-  ScreenSizes,
-  sleep,
-  Typewriter
-};
+export { HeadContent, GlobalStyles, ScreenSizes, sleep, Typewriter };
