@@ -1,7 +1,7 @@
-import { addComponentStyleSheetToHead } from "../scripts/utils/index.js";
+import { HeadContent } from "../scripts/utils/index.js";
 
 const button = () => {
-  addComponentStyleSheetToHead("buttons");
+  HeadContent.addComponentStyleSheetToHead("buttons");
 };
 
 export default button;

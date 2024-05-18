@@ -1,21 +1,60 @@
-const mobileWidth = 450;
-const tabletWidth = 750;
-const desktopWidth = 1000;
+class ScreenSizes {
+  #mobileWidth;
+  #tabletWidth;
+  #desktopWidth;
 
-const isMobile = () => {
-  return window.innerWidth <= mobileWidth;
-};
+  constructor(mobileWidth = 450, tabletWidth = 750, desktopWidth = 1000) {
+    this.windowWidth = window.innerWidth;
+    this.#mobileWidth = mobileWidth;
+    this.#tabletWidth = tabletWidth;
+    this.#desktopWidth = desktopWidth;
+  }
 
-const isDesktop = () => {
-  return window.innerWidth >= 1000;
-};
+  isMobile() {
+    return this.windowWidth <= this.#mobileWidth;
+  }
 
-const isMediumWidth = () => {
-  return window.innerWidth > mobileWidth && window.innerWidth < tabletWidth;
-};
+  isDesktop() {
+    return this.windowWidth >= this.#desktopWidth;
+  }
 
-const isTabletWidth = () => {
-  return window.innerWidth >= tabletWidth && window.innerWidth < desktopWidth;
-};
+  isMediumWidth() {
+    return (
+      this.windowWidth > this.#mobileWidth &&
+      this.windowWidth < this.#tabletWidth
+    );
+  }
 
-export { isMobile, isMediumWidth, isTabletWidth, isDesktop };
+  isTabletWidth() {
+    return (
+      this.windowWidth >= this.#tabletWidth &&
+      this.windowWidth < this.#desktopWidth
+    );
+  }
+
+  set mobileWidth(width) {
+    this.#mobileWidth = width;
+  }
+
+  get mobileWidth() {
+    return this.#mobileWidth;
+  }
+
+  set tabletWidth(width) {
+    this.#tabletWidth = width;
+  }
+
+  get tabletWidth() {
+    return this.#tabletWidth;
+  }
+
+  set desktopWidth(width) {
+    this.#desktopWidth = width;
+  }
+
+  get desktopWidth() {
+    return this.#desktopWidth;
+  }
+}
+
+export default ScreenSizes;
