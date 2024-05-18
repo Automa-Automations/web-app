@@ -2,10 +2,11 @@ import { navbar, button } from "/static/components/index.js";
 
 import {
   ScreenSizes,
-  typewriter,
+  Animations,
   HeadContent,
   setGlobalStyles,
 } from "../utils/index.js";
+import Typewriter from "../utils/animations/typewriter.js";
 
 HeadContent.addHeadContent({ route: "index", textStyles: true });
 setGlobalStyles();
@@ -16,7 +17,7 @@ navbar("#navbar");
 // Import button styles
 button();
 
-const giveMoreDescriptiveTextOnDesktop = () => {
+const giveMoreDescriptiveTextOnDesktop = async () => {
   const heroTitle = document.getElementById("hero-title");
   const heroSubText = document.getElementById("hero-sub-text");
   const heroBottomText = document.getElementById("hero-bottom-text");
@@ -66,7 +67,9 @@ const giveMoreDescriptiveTextOnDesktop = () => {
   }
 
   // Call the typewriter function on '#hero-title'
-  typewriter("#hero-title", textArray, 6, 2, 0.5, 2, 1);
+  const typewriter = new Animations.typewriter("#hero-title", textArray, 6, 2, 0.5, 2, 1);
+  await typewriter.start()
+
 };
 
 giveMoreDescriptiveTextOnDesktop();

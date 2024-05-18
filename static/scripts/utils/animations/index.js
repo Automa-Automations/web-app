@@ -1,4 +1,4 @@
-import Typewriter from "./typewriter";
+import Typewriter from "./typewriter.js";
 
 class Animations {
   static typewriter = Typewriter;
