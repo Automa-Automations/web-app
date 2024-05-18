@@ -6,7 +6,6 @@ import {
   HeadContent,
   GlobalStyles,
 } from "../utils/index.js";
-import Typewriter from "../utils/animations/typewriter.js";
 
 HeadContent.addHeadContent({ route: "index", textStyles: true });
 // It already uses the default global styles defined in the class, if no styles is provided

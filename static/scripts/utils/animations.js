@@ -1,4 +1,4 @@
-import { sleep } from "../other.js";
+import { sleep } from "./other.js";
 
 class Typewriter {
   /**
@@ -106,4 +106,9 @@ class Typewriter {
   };
 }
 
-export default Typewriter;
+class Animations {
+  static typewriter = Typewriter;
+}
+
+
+export default Animations;
