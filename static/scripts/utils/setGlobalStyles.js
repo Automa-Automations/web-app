@@ -1,17 +1,42 @@
-// THIS FUNCTION IS USED TO SET CLASS DEFAULT STYLES TO ELEMENT, FOR EXAMPLE TEXTSTYLES.
+class GlobalStyles {
+  globalStylesArray = [
+    {
+      "selector": "button",
+      "class": "headlinesm",
+    },
+    {
+      "selector": ".badge",
+      "class": "badge-text",
+    }
+  ]
 
-const addClass = (selector, classToAdd) => {
-  const elements = document.querySelectorAll(selector);
-  if (elements) {
-    elements.forEach((element) => element.classList.add(classToAdd));
+  constructor(globalStylesArray = this.globalStylesArray) {
+    this.globalStylesArray = globalStylesArray;
+    this.#setGlobalStyles();
   }
-};
 
-const setGlobalStyles = () => {
-  // Set buttons default text size.
-  addClass("button", "headlinesm");
-  // Set badge text styles
-  addClass(".badge", "badge-text");
-};
+  set globalStyles(globalStylesArray) {
+    this.globalStylesArray = globalStylesArray;
+    this.#setGlobalStyles();
+  }
 
-export default setGlobalStyles;
+  appendStyles(stylesObjectsToAppend) {
+    this.globalStylesArray.concat(stylesObjectsToAppend);
+    this.#setGlobalStyles()
+  }
+
+  #addClass(selector, classToAdd) {
+    const elements = document.querySelectorAll(selector);
+    if (elements) {
+      elements.forEach((element) => element.classList.add(classToAdd));
+    }
+  };
+
+  #setGlobalStyles() {
+    for (const styleObject of this.globalStylesArray) {
+      this.#addClass(styleObject["selector"], styleObject["class"]);
+    }
+  };
+}
+
+export default GlobalStyles;
