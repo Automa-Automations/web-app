@@ -2,6 +2,11 @@ class HeadContent {
   static addComponentStyleSheetToHead(componentName) {
     const head = document.querySelector("head");
 
+    if (!head) {
+      console.error("No head element found");
+      return
+    }
+
     const link = document.createElement("link");
     link.setAttribute("rel", "stylesheet");
     link.setAttribute("href", `/static/css/components/${componentName}.css`);
@@ -24,7 +29,7 @@ class HeadContent {
       <meta name="description" content="${description}" />
       <link href="/static/css/theme/index.css" rel="stylesheet" />
       <link href="/static/css/routes/${route}.css" rel="stylesheet" />
-      <link rel="icon" type="x-icon/image" href="${iconPath}" />
+      <link rel="icon" type="image/x-icon" href="${iconPath}" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -32,26 +37,56 @@ class HeadContent {
       ${customHTML}
     `;
     const headElement = document.querySelector("head");
+
+    if (!headElement) {
+      console.error("No head element found");
+      return
+    }
+
     headElement.innerHTML = headContent;
   };
 
   static removeHeadContent() {
     const head = document.querySelector("head");
+
+    if (!head) {
+      console.error("No head element found");
+      return
+    }
+
     head.innerHTML = ""
   }
 
   static get headContent() {
     const head = document.querySelector("head");
+
+    if (!head) {
+      console.error("No head element found");
+      return
+    }
+
     return head.innerHTML;
   }
   
   static set headContent(innerHTML) {
     const head = document.querySelector("head");
+
+    if (!head) {
+      console.error("No head element found");
+      return
+    }
+
     head.innerHTML = innerHTML;
   }
 
   static appendHeadContent(innerHTML) {
     const head = document.querySelector("head");
+
+    if (!head) {
+      console.error("No head element found");
+      return
+    }
+
     head.innerHTML += innerHTML;
   }
 }
