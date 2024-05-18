@@ -2,23 +2,24 @@ import { sleep } from "./other.js";
 
 class Typewriter {
   /**
-    * Simulates a typewriter effect on a specified text element.
-    *
-    * @param {string} selector - The text element selector for the typewriter effect.
-    * @param {string[]} textArray - An array of strings containing the text to be typed.
-    * @param {number} typeSpeed - The number of characters to type per second.
-    * @param {number} loopNumber - The number of times to simulate the typewriter effect. @param {number} removeWordInterval - The time to pause before removing the next word (in seconds).
-    * @param {number} pauseDuration - The time to pause after removing all text before typing the next string (in seconds).
-    * @param {number} pauseAfterTypingDuration - The time to pause after typing the text before starting to remove the text (in seconds).
-  */
+   * Simulates a typewriter effect on a specified text element.
+   *
+   * @param {string} selector - The text element selector for the typewriter effect.
+   * @param {string[]} textArray - An array of strings containing the text to be typed.
+   * @param {number} typeSpeed - The number of characters to type per second.
+   * @param {number} loopNumber - The number of times to simulate the typewriter effect.
+   * @param {number} removeWordInterval - The time to pause before removing the next word (in seconds).
+   * @param {number} pauseDuration - The time to pause after removing all text before typing the next string (in seconds).
+   * @param {number} pauseAfterTypingDuration - The time to pause after typing the text before starting to remove the text (in seconds).
+   */
   constructor(
     selector,
     textArray,
-    typeSpeed,
-    loopNumber,
-    removeWordInterval,
-    pauseDuration,
-    pauseAfterTypingDuration,
+    typeSpeed = 5,
+    loopNumber = 1,
+    removeWordInterval = 1,
+    pauseDuration = 1,
+    pauseAfterTypingDuration = 1
   ) {
     this.selector = selector;
     this.textArray = textArray;
@@ -28,6 +29,7 @@ class Typewriter {
     this.pauseDuration = pauseDuration;
     this.pauseAfterTypingDuration = pauseAfterTypingDuration;
   }
+
   async start() {
     const {
       selector,
@@ -70,15 +72,15 @@ class Typewriter {
         }
       }
     }
-  };
+  }
 
-  async #typeText (text, sleepBetweenCharacter, textElement) {
+  async #typeText(text, sleepBetweenCharacter, textElement) {
     // Type each character in the text string.
     for (const character of text) {
       textElement.textContent += character;
       await sleep(sleepBetweenCharacter);
     }
-  };
+  }
 
   async #typewriterRemoveText(text, removeWordInterval, textElement) {
     // Split the text string into an array of words.
@@ -98,15 +100,12 @@ class Typewriter {
         await sleep(removeWordInterval * 1000);
       }
     }
-  };
+  }
 
   async #stopBlinking(textElement) {
     await sleep(2000);
     textElement.style.border = "none";
-  };
+  }
 }
 
-export {
-  Typewriter,
-}
-
+export { Typewriter };
