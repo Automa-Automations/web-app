@@ -20,8 +20,9 @@ export default function Newsletter() {
       gap="10px"
     >
       <Text 
-        fontSize="3xl"
+        fontSize={{base: "xl", md: "3xl"}}
         fontWeight="bold"
+        textAlign="center"
       >
         Redirecting to newsletter... 
       </Text>
