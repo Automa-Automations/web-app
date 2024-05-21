@@ -4,7 +4,6 @@ import {
   Text,
   Flex,
   Button,
-  Menu,
   useColorModeValue,
   Stack,
   useColorMode,
