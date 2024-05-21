@@ -52,7 +52,7 @@ export default function CallToActionWithAnnotation() {
             >
               Get Started
             </Button>
-            <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+            <Button onClick={() => window.open("https://github.com/Automa-Automations/", "_blank")} variant={'link'} colorScheme={'blue'} size={'sm'}>
               Learn more
             </Button>
             <Box
