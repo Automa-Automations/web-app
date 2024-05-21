@@ -25,6 +25,7 @@ export default function Nav() {
             <Image width="35px" src="/logo.svg" />
             <Text
               fontWeight="bold"
+              display={{base: "none", md: "block"}} 
             >
               Automa Automations
             </Text>

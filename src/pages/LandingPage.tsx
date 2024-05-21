@@ -28,7 +28,7 @@ export default function CallToActionWithAnnotation() {
             </Text>
           </Heading>
           <Text color={'gray.500'}>
-            Automa Automations aim to automate content creation using AI, along with the content scheduling process. We are a "done for you" solution, we aim to fully automate the process.
+            {`Automa Automations aim to automate content creation using AI, along with the content scheduling process. ${window.innerWidth >= 600 ? 'We are a "done for you" solution, we aim to fully automate the process.' : ""}`}
           </Text>
           <Stack
             direction={'column'}
@@ -52,6 +52,7 @@ export default function CallToActionWithAnnotation() {
             </Button>
             <Box
               marginTop="25px"
+              display={{ base: 'none', md: 'block' }}
             >
               <Icon
                 as={Arrow}
