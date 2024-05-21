@@ -10,7 +10,10 @@ import {
   createIcon,
 } from '@chakra-ui/react';
 
+import { useNavigate } from 'react-router-dom';
+
 export default function CallToActionWithAnnotation() {
+  const navigate = useNavigate();
   return (
     <>
       <Container maxW={'3xl'}>
@@ -44,7 +47,9 @@ export default function CallToActionWithAnnotation() {
               px={6}
               _hover={{
                 bg: 'green.500',
-              }}>
+              }}
+              onClick={() => navigate('/newsletter')}
+            >
               Get Started
             </Button>
             <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
